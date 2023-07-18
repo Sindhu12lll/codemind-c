@@ -1,17 +1,18 @@
 #include<stdio.h>
 int main()
 {
-    int n,x[20],c=0,i;
+    int n,c=0;
     scanf("%d",&n);
+    int a[n],i;
     for(i=0;i<n;i++)
     {
-        scanf("%d",&x[i]);
+        scanf("%d",&a[i]);
     }
     for(i=0;i<n;i++)
     {
-        if(x[i]%2!=0)
+        if(a[i]%2!=0)
         {
-            c++;
+            c=c+1;
         }
     }
     if(c<=2)
