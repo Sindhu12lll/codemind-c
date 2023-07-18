@@ -7,27 +7,27 @@ int main()
     {
         scanf("%d",&a[i]);
     }
-     for(i=0;i<n;i++)
-     {
-         t[i]=a[i];
-     }
-     scanf("%d",&d);
-      for(i=0;i<n;i++)
-      {
-          if(a[i]>a[i+1])
-          {
-              a[i+1]=a[i];
-          }
-      }
-      for(i=0;i<n;i++)
-      {
-          if(t[i]+d>=a[i])
-          {
-              printf("True ");
-          }
-          else
-          {
-              printf("False ");
-          }
-      }
+    for(i=0;i<n;i++)
+    {
+        t[i]=a[i];
+    }
+        scanf("%d",&d);
+        for(i=0;i<n;i++)
+        {
+            if(a[i]>a[i+1])
+            {
+                a[i+1]=a[i];
+            }
+        }
+        for(i=0;i<n;i++)
+        {
+            if(t[i]+d>=a[i])
+            {
+                printf("True ");
+            }
+            else
+            {
+                printf("False ");
+            }
+    }
 }
